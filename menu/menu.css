@@ -61,7 +61,10 @@ p {
   align-self: center;
 }
 
-.header__btn {
+.btn--header {
+  margin-right: 16px;
+}
+.btn--feedback {
   margin-right: 16px;
 }
 .btn:last-of-type {
@@ -107,14 +110,15 @@ p {
   cursor: pointer;
 }
 
-.btn:first-of-type:hover {
+.btn--header:first-of-type:hover {
   transform: rotate(360deg);
+  transition-duration: 1.5s;
 }
-.btn:last-of-type:hover {
+.btn--header:last-of-type:hover {
   transform: scale(1.5);
 }
 
-.btn:first-of-type:hover {
+.btn--feedback:first-of-type:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
