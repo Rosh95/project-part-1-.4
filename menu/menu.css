@@ -35,8 +35,7 @@ p {
   box-shadow: 5px 0px 20px 10px rgb(0 0 0 / 30%);
 }
 
-.container__block-bottom,
-.container__block-top {
+.container__block {
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -49,6 +48,8 @@ p {
 
 .header__logo {
   border-radius: 50%;
+  margin-right: auto;
+  align-self: center;
 }
 
 .btn {
@@ -61,18 +62,14 @@ p {
   align-self: center;
 }
 
-.btn--header {
+.header__btn {
   margin-right: 16px;
 }
-.btn--feedback {
+.footer__btn {
   margin-right: 16px;
 }
 .btn:last-of-type {
   margin-right: 0;
-}
-
-.header__logo {
-  margin-right: auto;
 }
 
 .menu__list::before {
@@ -85,9 +82,6 @@ p {
   margin: auto 20px auto -24px;
 }
 
-.menu__item {
-  margin-right: 24px;
-}
 .menu__link {
   display: inline-block;
   text-decoration: none;
@@ -96,6 +90,7 @@ p {
   color: #1b1c21;
   white-space: nowrap;
   padding: 16px 0;
+  width: 100%;
 }
 .menu__link:first-of-type {
   padding-top: 8px;
@@ -104,21 +99,21 @@ p {
 .footer__email--link,
 .language__link,
 .btn,
-.footer__phone-number--link,
+.footer__phone--link,
 .menu__link {
   transition-duration: 1s;
   cursor: pointer;
 }
 
-.btn--header:first-of-type:hover {
+.header__btn:first-of-type:hover {
   transform: rotate(360deg);
   transition-duration: 1.5s;
 }
-.btn--header:last-of-type:hover {
+.header__btn:last-of-type:hover {
   transform: scale(1.5);
 }
 
-.btn--feedback:first-of-type:hover {
+.footer__btn:first-of-type:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
@@ -161,7 +156,7 @@ p {
 .footer__email--link:hover,
 .language__link:hover,
 .btn:hover,
-.footer__phone-number--link:hover,
+.footer__phone--link:hover,
 .menu__link:hover {
   transition-duration: 0.4s;
   transform: scale(1.1);
@@ -176,7 +171,7 @@ p {
   margin: 0;
 }
 
-.feedback__block {
+.footer__btns {
   margin-bottom: 16px;
 }
 
@@ -189,7 +184,7 @@ p {
   padding-bottom: 12px;
 }
 
-.footer__phone-number--link {
+.footer__phone--link {
   font-weight: bold;
   color: #1b1c21;
   display: inline-block;
@@ -199,7 +194,7 @@ p {
   margin-bottom: 30px;
 }
 
-.language__list {
+.footer__language {
   display: flex;
   list-style: none;
 }
@@ -210,4 +205,8 @@ p {
   line-height: 24px;
   color: #1b1c21;
   margin-right: 7px;
+}
+.footer__language {
+  padding-left: 0;
+  margin-top: 0;
 }
